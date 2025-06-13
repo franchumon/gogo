@@ -28,6 +28,7 @@ public class Main {
                         System.out.println((i+1) + ". " + vuelos.get(i));
                     }
                     break;
+            //se hace un bucle clasico
                     
                 case 2:
                     System.out.println("\nSeleccione un vuelo:");
@@ -73,6 +74,8 @@ public class Main {
                     System.out.println("2. PayPal");
                     System.out.print("Opción: ");
                     int metodo = Integer.parseInt(scanner.nextLine());
+
+                    //aqui se utiliza el ? el cual funciona como un if xd
                     
                     MetodoPago pago = (metodo == 2) ? 
                         new AdaptadorPaypal(obtenerEmailPaypal(scanner)) : 
